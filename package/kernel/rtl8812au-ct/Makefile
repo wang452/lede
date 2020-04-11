@@ -47,6 +47,7 @@ define Build/Compile
 		$(KERNEL_MAKE_FLAGS) \
 		SUBDIRS="$(PKG_BUILD_DIR)" \
 		NOSTDINC_FLAGS="$(NOSTDINC_FLAGS)" \
+		PKG_HASH=skip \
 		modules
 endef
 
